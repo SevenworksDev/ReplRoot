@@ -1,7 +1,10 @@
-echo "###################################"
+if [ -d "./sys" ] 
+then
+./dist/proot -S . /bin/bash
+else
+echo "###############################"
 echo "## ReplRoot :: By Chase Wicklund ##"
-echo "###################################"
-sleep 2s
+echo "###############################"
 echo ":: Installing Debian ::"
 sleep 2s
 clear
@@ -21,5 +24,4 @@ echo "-: Welcome to ReplRoot (Debian)! :-"
 echo "-: It is highly reccomended you run pkg.sh in the ReplRoot folder first before Installing anything. :-"
 echo "-: You can clean ReplRoot by running clean.sh in the ReplRoot folder. :-"
 ./dist/proot -S . /bin/bash
-chmod +x ./ReplRoot/clean.sh
-chmod +x ./ReplRoot/pkg.sh
+fi
