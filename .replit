@@ -1,4 +1,4 @@
-run = "bash ./ReplRoot/boot.sh"
+run = "bash ./ReplRoot/main.sh"
 
 [nix]
 channel = "stable-21_11"
